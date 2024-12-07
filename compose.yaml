@@ -9,5 +9,9 @@ services:
       - "bin/dev"
     volumes:
       - .:/rails
+      - rails_app_node_modules:/rails/node_modules
     ports:
       - 3000:3000
+
+volumes:
+  rails_app_node_modules:
