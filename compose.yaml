@@ -12,6 +12,7 @@ services:
       - rails_app_node_modules:/rails/node_modules
     ports:
       - 3000:3000
+    tty: true
 
 volumes:
   rails_app_node_modules:
